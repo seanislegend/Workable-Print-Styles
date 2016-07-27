@@ -1,0 +1,60 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700,800';
+
+@media print {
+    body {
+        color: #666;
+        font-family: 'Open Sans', sans-serif;
+        font-size: .85em;
+        line-height: 1.6;
+        margin: 0;
+        padding: 2em 4em;
+    }
+
+    .section {
+        margin-bottom: 3em;
+    }
+
+    /**
+     * All 'headings'
+     */
+    .section--header h1,
+    .section__header,
+    .section p > strong {
+        color: #333;
+    }
+
+    /**
+     * Bold formatting is used for headings within the WYSIWYG editor
+     */
+    .section p > strong {
+        font-size: medium;
+    }
+
+    /**
+     * The logo
+     */
+    .section:first-of-type img {
+        max-height: 70px;
+    }
+
+
+    /**
+     * Main header with main role details
+     */
+    header.section {
+        margin-bottom: 4em;
+    }
+        .breadcrumbs {
+            display: none;
+        }
+        .meta {
+            margin-top: -1em;
+        }
+
+    /**
+     * 'Apply' CTA section
+     */
+    .section--cta {
+        display: none;
+    }
+}
